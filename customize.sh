@@ -72,15 +72,9 @@ fade_out() {
 main() {
     fade
 }
-
-if [ "$C" = "Xiaomi" ] || [ "$C_" = "Xiaomi" ] || [ "$C" = "xiaomi" ] || [ "$C_" = "xiaomi" ]; then
-    print_modname
-    echo "闪屏为正常现象，5秒后准备计算"
-    echo "Ready to calculate in 5 seconds"
-    sleep 5
-    main
-    set_permissions
-else
-    echo "Not Support Device.不支持的设备"
-    exit 1
-fi
+print_modname
+echo "闪屏为正常现象，5秒后准备计算"
+echo "Ready to calculate in 5 seconds"
+sleep 5
+main
+set_permissions
