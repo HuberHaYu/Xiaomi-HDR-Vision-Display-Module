@@ -19,7 +19,7 @@ wait_until_login() {
         cur_brightness=$(cat "$_path")
         if [ "$cur_brightness" -gt 1500 ]; then
             settings put system screen_brightness_mode 0
-            echo 3800 > "$_path"
+            echo 4000 > "$_path"
         else
             settings put system screen_brightness_mode 1
         fi
