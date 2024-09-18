@@ -18,7 +18,7 @@ wait_until_login() {
         _path_max="/sys/class/backlight/panel0-backlight/max_brightness"
         cur_brightness=$(cat "$_path")
         if [ "$cur_brightness" -gt 1500 ]; then
-            echo 3200 > "$_path"
+            echo 3800 > "$_path"
         fi
         sleep 2
     done
